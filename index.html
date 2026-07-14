@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — Web Developer</title>
+<meta name="description" content="Portfolio of Your Name, a web developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="top">
+  <div class="nav__inner">
+    <a href="#top" class="nav__logo">~/your-name</a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about">/about</a>
+      <a href="#skills">/skills</a>
+      <a href="#contact">/contact</a>
+    </nav>
+    <div class="nav__right">
+      <span class="status-pill"><span class="status-dot"></span>Available for work</span>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero__inner">
+      <p class="eyebrow">// web developer</p>
+      <h1 class="hero__title">Hi, I'm <span class="accent">Your Name</span>.<br>I build things for the web.</h1>
+      <p class="hero__lead">I design and build fast, accessible web applications — from first wireframe to production deploy. Currently open to new opportunities and freelance work.</p>
+      <div class="hero__actions">
+        <a href="assets/resume.pdf" class="btn btn--primary" download>Download Resume</a>
+        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero__panel" aria-hidden="true">
+      <div class="panel__header">
+        <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
+        <span class="panel__filename">profile.json</span>
+      </div>
+      <pre class="panel__code"><code><span class="tok-brace">{</span>
+  <span class="tok-key">"name"</span>: <span class="tok-str">"Your Name"</span>,
+  <span class="tok-key">"role"</span>: <span class="tok-str">"Web Developer"</span>,
+  <span class="tok-key">"location"</span>: <span class="tok-str">"Your City"</span>,
+  <span class="tok-key">"stack"</span>: <span class="tok-brack">[</span><span class="tok-str">"JS"</span>, <span class="tok-str">"HTML"</span>, <span class="tok-str">"CSS"</span><span class="tok-brack">]</span>,
+  <span class="tok-key">"open_to_work"</span>: <span class="tok-bool">true</span>
+<span class="tok-brace">}</span></code></pre>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="section__head">
+      <p class="section__label">/about</p>
+      <h2 class="section__title">A bit about me</h2>
+    </div>
+    <div class="about__grid">
+      <div class="about__photo" aria-hidden="true"><span>YOUR<br>PHOTO</span></div>
+      <div class="about__body">
+        <p>Replace this paragraph with two or three sentences about who you are, what kind of developer you are, and what you care about when you build software.</p>
+        <p>Add a second paragraph about your background: how you got into development, what you've worked on, and what you're looking for next.</p>
+        <ul class="facts">
+          <li><span class="facts__label">Location</span><span>Your City, Country</span></li>
+          <li><span class="facts__label">Focus</span><span>Frontend &amp; Full-Stack</span></li>
+          <li><span class="facts__label">Experience</span><span>X years</span></li>
+          <li><span class="facts__label">Email</span><span>your.email@example.com</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="skills">
+    <div class="section__head">
+      <p class="section__label">/skills</p>
+      <h2 class="section__title">What I work with</h2>
+    </div>
+    <div class="skills__grid">
+      <div class="skill-card">
+        <h3>Frontend</h3>
+        <div class="tag-list"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span class="tag">React</span></div>
+      </div>
+      <div class="skill-card">
+        <h3>Backend</h3>
+        <div class="tag-list"><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">REST APIs</span><span class="tag">SQL</span></div>
+      </div>
+      <div class="skill-card">
+        <h3>Tools &amp; Workflow</h3>
+        <div class="tag-list"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">VS Code</span><span class="tag">Figma</span></div>
+      </div>
+    </div>
+    <p class="skills__note">Edit the lists above to match your actual stack.</p>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="section__head">
+      <p class="section__label">/contact</p>
+      <h2 class="section__title">Let's work together</h2>
+    </div>
+    <div class="contact__grid">
+      <div class="contact__info">
+        <p>Have a role, project, or idea in mind? Send a message and I'll get back to you as soon as I can.</p>
+        <ul class="contact__links">
+          <li><a href="mailto:your.email@example.com">your.email@example.com</a></li>
+          <li><a href="https://github.com/your-username" target="_blank" rel="noopener">github.com/your-username</a></li>
+          <li><a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener">linkedin.com/in/your-username</a></li>
+        </ul>
+      </div>
+      <form class="contact__form" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+          <span class="field__error" id="nameError"></span>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+          <span class="field__error" id="emailError"></span>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <span class="field__error" id="messageError"></span>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+        <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Your Name. Built with HTML, CSS &amp; JavaScript.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
