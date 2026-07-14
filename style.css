@@ -67,7 +67,7 @@ ul { list-style: none; }
 
 /* ABOUT */
 .about__grid { display: grid; grid-template-columns: 260px 1fr; gap: 50px; align-items: start; }
-.about__photo { aspect-ratio: 1; border-radius: var(--radius); background: var(--accent-soft); border: 1px dashed var(--accent); display: flex; align-items: center; justify-content: center; text-align: center; font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent); }
+.about__photo { aspect-ratio: 1; border-radius:var() (--radius); background: var(--accent-soft);  display: flex; align-items: center; justify-content: center; text-align: center; font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent); }
 .about__body p { color: var(--text-soft); margin-bottom: 16px; max-width: 60ch; }
 .facts { margin: 24px 0 28px; border-top: 1px solid var(--border); }
 .facts li { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 0.95rem; max-width: 420px; }
