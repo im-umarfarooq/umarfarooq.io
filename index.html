@@ -3,82 +3,86 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name — Web Developer</title>
-<meta name="description" content="Portfolio of Your Name, a web developer.">
+<title>Your Name — Web Developer | Available for Hire</title>
+<meta name="description" content="Your Name — Web Developer building fast, reliable websites and applications for clients. Get in touch to start your project.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="nav" id="top">
   <div class="nav__inner">
-    <a href="#top" class="nav__logo">~/your-name</a>
+    <a href="#top" class="nav__logo">Your<span class="accent">Name</span>.dev</a>
     <nav class="nav__links" id="navLinks">
-      <a href="#about">/about</a>
-      <a href="#skills">/skills</a>
-      <a href="#contact">/contact</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#why">Why Me</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <div class="nav__right">
-      <span class="status-pill"><span class="status-dot"></span>Available for work</span>
-      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
+    <a href="#contact" class="btn btn--cta nav__cta">Hire Me</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
 <main>
+
+  <!-- HERO -->
   <section class="hero">
     <div class="hero__inner">
-      <p class="eyebrow">// web developer</p>
-      <h1 class="hero__title">Hi, I'm <span class="accent">Your Name</span>.<br>I build things for the web.</h1>
-      <p class="hero__lead">I design and build fast, accessible web applications — from first wireframe to production deploy. Currently open to new opportunities and freelance work.</p>
+      <span class="status-pill"><span class="status-dot"></span>Available for new projects</span>
+      <h1 class="hero__title">I build websites that turn<br>visitors into <span class="accent">clients</span>.</h1>
+      <p class="hero__lead">
+        Hi, I'm Your Name — a web developer who designs and ships fast,
+        reliable, good-looking websites and web apps. If you need a site
+        that actually gets results, let's talk.
+      </p>
       <div class="hero__actions">
-        <a href="assets/resume.pdf" class="btn btn--primary" download>Download Resume</a>
-        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+        <a href="#contact" class="btn btn--cta btn--lg">Start a Project →</a>
+        <a href="assets/resume.pdf" class="btn btn--ghost btn--lg" download>Download Resume</a>
       </div>
-    </div>
-    <div class="hero__panel" aria-hidden="true">
-      <div class="panel__header">
-        <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
-        <span class="panel__filename">profile.json</span>
-      </div>
-      <pre class="panel__code"><code><span class="tok-brace">{</span>
-  <span class="tok-key">"name"</span>: <span class="tok-str">"Your Name"</span>,
-  <span class="tok-key">"role"</span>: <span class="tok-str">"Web Developer"</span>,
-  <span class="tok-key">"location"</span>: <span class="tok-str">"Your City"</span>,
-  <span class="tok-key">"stack"</span>: <span class="tok-brack">[</span><span class="tok-str">"JS"</span>, <span class="tok-str">"HTML"</span>, <span class="tok-str">"CSS"</span><span class="tok-brack">]</span>,
-  <span class="tok-key">"open_to_work"</span>: <span class="tok-bool">true</span>
-<span class="tok-brace">}</span></code></pre>
     </div>
   </section>
 
+  <!-- STATS BAR -->
+  <section class="stats">
+    <div class="stats__inner">
+      <div class="stat"><span class="stat__num">X+</span><span class="stat__label">Years Experience</span></div>
+      <div class="stat"><span class="stat__num">X+</span><span class="stat__label">Projects Delivered</span></div>
+      <div class="stat"><span class="stat__num">X+</span><span class="stat__label">Happy Clients</span></div>
+      <div class="stat"><span class="stat__num">24h</span><span class="stat__label">Avg. Response Time</span></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
   <section class="section" id="about">
     <div class="section__head">
-      <p class="section__label">/about</p>
-      <h2 class="section__title">A bit about me</h2>
+      <p class="section__label">ABOUT</p>
+      <h2 class="section__title">A developer who cares about your outcome</h2>
     </div>
     <div class="about__grid">
       <div class="about__photo" aria-hidden="true"><span>YOUR<br>PHOTO</span></div>
       <div class="about__body">
-        <p>Replace this paragraph with two or three sentences about who you are, what kind of developer you are, and what you care about when you build software.</p>
-        <p>Add a second paragraph about your background: how you got into development, what you've worked on, and what you're looking for next.</p>
+        <p>Replace this with 2–3 sentences on who you are and what kind of developer you are — write it like you're talking to a client, not a recruiter. Focus on the value you bring, not just your job title.</p>
+        <p>Add a second paragraph: your background, what you've built, and what kind of projects you're looking for next.</p>
         <ul class="facts">
           <li><span class="facts__label">Location</span><span>Your City, Country</span></li>
           <li><span class="facts__label">Focus</span><span>Frontend &amp; Full-Stack</span></li>
-          <li><span class="facts__label">Experience</span><span>X years</span></li>
-          <li><span class="facts__label">Email</span><span>your.email@example.com</span></li>
+          <li><span class="facts__label">Availability</span><span>Open to freelance &amp; full-time</span></li>
         </ul>
+        <a href="#contact" class="btn btn--cta">Let's Talk →</a>
       </div>
     </div>
   </section>
 
+  <!-- SKILLS -->
   <section class="section section--alt" id="skills">
     <div class="section__head">
-      <p class="section__label">/skills</p>
-      <h2 class="section__title">What I work with</h2>
+      <p class="section__label">SKILLS</p>
+      <h2 class="section__title">What I bring to your project</h2>
     </div>
     <div class="skills__grid">
       <div class="skill-card">
@@ -94,17 +98,43 @@
         <div class="tag-list"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">VS Code</span><span class="tag">Figma</span></div>
       </div>
     </div>
-    <p class="skills__note">Edit the lists above to match your actual stack.</p>
   </section>
 
-  <section class="section" id="contact">
+  <!-- WHY HIRE ME -->
+  <section class="section" id="why">
     <div class="section__head">
-      <p class="section__label">/contact</p>
-      <h2 class="section__title">Let's work together</h2>
+      <p class="section__label">WHY WORK WITH ME</p>
+      <h2 class="section__title">What clients get when they hire me</h2>
+    </div>
+    <div class="why__grid">
+      <div class="why-card">
+        <h3>Fast turnaround</h3>
+        <p>Clear timelines and regular updates — no disappearing for weeks.</p>
+      </div>
+      <div class="why-card">
+        <h3>Clean, maintainable code</h3>
+        <p>Code that's built to last and easy for any future developer to pick up.</p>
+      </div>
+      <div class="why-card">
+        <h3>Direct communication</h3>
+        <p>You talk to the person actually building your project — always.</p>
+      </div>
+    </div>
+    <div class="cta-banner">
+      <h3>Have a project in mind?</h3>
+      <a href="#contact" class="btn btn--cta btn--lg">Get a Free Consultation →</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--alt" id="contact">
+    <div class="section__head">
+      <p class="section__label">CONTACT</p>
+      <h2 class="section__title">Let's build something great together</h2>
     </div>
     <div class="contact__grid">
       <div class="contact__info">
-        <p>Have a role, project, or idea in mind? Send a message and I'll get back to you as soon as I can.</p>
+        <p>Fill out the form or reach out directly — I typically respond within 24 hours.</p>
         <ul class="contact__links">
           <li><a href="mailto:your.email@example.com">your.email@example.com</a></li>
           <li><a href="https://github.com/your-username" target="_blank" rel="noopener">github.com/your-username</a></li>
@@ -123,20 +153,26 @@
           <span class="field__error" id="emailError"></span>
         </div>
         <div class="field">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
+          <label for="message">Project details</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Tell me a bit about your project..."></textarea>
           <span class="field__error" id="messageError"></span>
         </div>
-        <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+        <button type="submit" class="btn btn--cta btn--full">Send Message →</button>
         <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
       </form>
     </div>
   </section>
+
 </main>
 
 <footer class="footer">
-  <p>&copy; <span id="year"></span> Your Name. Built with HTML, CSS &amp; JavaScript.</p>
+  <p>&copy; <span id="year"></span> Your Name. Available for hire — <a href="#contact">get in touch</a>.</p>
 </footer>
+
+<!-- Floating sticky CTA -->
+<a href="#contact" class="floating-cta" id="floatingCta">
+  <span class="status-dot"></span> Hire Me
+</a>
 
 <script src="script.js"></script>
 </body>
